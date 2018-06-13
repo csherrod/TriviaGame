@@ -112,8 +112,8 @@
   
       $("#counter-number").text(this.counter);
   
-      panel.html("<h2>Out of Time!</h2>");
-      panel.append("<h3>The Correct Answer was: " + questions[this.currentQuestion].correctAnswer);
+      panel.html("<h2 class='caution'>Out of Time!</h2>");
+      panel.append("<h3>The Correct Answer was:</h3><h3 class='right'>" + questions[this.currentQuestion].correctAnswer);
       panel.append("<img src='" + questions[this.currentQuestion].image + "' />");
   
       if (this.currentQuestion === questions.length - 1) {
@@ -132,9 +132,9 @@
   
       $("#counter-number").text(this.counter);
   
-      panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
-      panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
-      panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+      panel.append("<h3 class='right'>Correct Answers: " + this.correct + "</h3>");
+      panel.append("<h3 class='wrong'>Incorrect Answers: " + this.incorrect + "</h3>");
+      panel.append("<h3 class='caution'>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
       panel.append("<br><button type='button' class='btn btn-lg' id='start-over'>Start Over?</button>");
     },
   
@@ -154,8 +154,8 @@
   
       clearInterval(window.timer);
   
-      panel.html("<h2>Whoops!</h2>");
-      panel.append("<h3>The Correct Answer was: " + questions[this.currentQuestion].correctAnswer + "</h3>");
+      panel.html("<h2 class='wrong'>Sorry!</h2>");
+      panel.append("<h3>The Correct Answer was:</h3><h3 class='right'>" + questions[this.currentQuestion].correctAnswer + "</h3>");
       panel.append("<img src='" + questions[this.currentQuestion].image + "' />");
   
       if (this.currentQuestion === questions.length - 1) {
@@ -172,7 +172,7 @@
   
       this.correct++;
   
-      panel.html("<h2>Correct!</h2>");
+      panel.html("<h2 class='right'>Correct!</h2>");
       panel.append("<img src='" + questions[this.currentQuestion].image + "' />");
   
       if (this.currentQuestion === questions.length - 1) {
