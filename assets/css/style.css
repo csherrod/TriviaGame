@@ -1,0 +1,57 @@
+body {
+    font-family: 'Rambla', sans-serif;
+    background-image: url('../images/chelsea_bg.jpg');
+    color: #ffffff;
+}
+/* NavBar */
+.sticky-top {
+    background-color: #031c86;
+    text-align: center;
+    height: 70px;
+    padding:5px;
+}
+
+/* Main Content Container */
+.content {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.hr {
+    height: 2px;
+    background-color: #5E0B0E;
+    margin: 10px;
+}
+#start {
+    background-color: #031c86;
+    color: #ffffff;
+    box-shadow: 5px 5px 2px #072E63;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+#start:hover {
+    background-color: #368EFF;
+    box-shadow: 10px 10px 5px #072E63;
+    bottom: 8px;
+}
+#sub-wrapper {
+    padding: 10px;
+}
+.card {
+    border: none;
+}
+#timer {
+    padding: 5px;
+}
+.answer-button {
+    background-color: #031c86;
+    color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 2px #072E63;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+.answer-button:hover {
+    background-color: #368EFF;
+    box-shadow: 10px 10px 5px #072E63;
+    bottom: 8px;
+}
