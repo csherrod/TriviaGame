@@ -2,6 +2,8 @@
 
 If you want to check out a working version of this site click [here](https://csherrod.github.io/TriviaGame)
 
+![Trivia Game](/assets/images/Trivia-Game.png)
+
 ## Prerequisites
 
 You need to have working knowledge of html, css and javascript.
